@@ -1,11 +1,11 @@
+import os
 import telebot
 from telebot import types
 import phonenumbers
 from phonenumbers import geocoder, carrier
 import requests
 import re
-
-TOKEN = "9089581751:AAEgcPCekWYhQtsaO_BCZjb-E-kevfK57ZE"
+TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(TOKEN)
 
 def menu():
